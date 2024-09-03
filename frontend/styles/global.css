@@ -1,0 +1,438 @@
+/* base styles, feel free to edit */
+html, body {
+  margin: 5px;
+  padding: 5px;
+  height: 100%;
+  font-family: Arial;
+}
+
+#popup-error {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #21252a;
+  width: 300px;
+  height: 150px;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  border-radius: 10px;
+}
+
+#popup-error h2 {
+  margin-top: 0;
+}
+
+#pop-error button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+#error-close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+#popup-create-thread {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#popup-create-thread h2 {
+  margin-top: 0;
+}
+
+#create-thread-close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+#popup-update-thread {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#popup-update-thread h2 {
+  margin-top: 0;
+}
+
+#update-thread-close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.thread-list {
+  border: 1px solid black;
+  max-height: 100px;
+  margin: 10px;
+  padding: 5px;
+}
+
+#body-dashboard {
+  display: flex;
+  margin: 10px;
+  padding: 5px;
+}
+
+#side-bar {
+  width: 400px;
+  height: 550px;
+  border: 1px solid blue;
+  margin: 10px;
+  padding: 5px;
+}
+
+#prev-btn {
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+#more-btn {
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+#main-screen {
+  width: 1000px;
+  border: 1px solid purple;
+  margin: 10px;
+  padding: 5px;
+}
+
+#thread-individual-screen-empty {
+  display: block;
+  margin: 10px;
+  padding: 5px;
+}
+
+#thread-individual-screen {
+  display: none;
+  margin: 10px;
+  padding: 5px;
+}
+
+
+#thread-card div {
+  margin: 2px;
+  padding: 2px;
+}
+
+#popup-update-comment {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#update-comment-close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+#popup-update-comment-id {
+  display: none;
+}
+
+
+#popup-user-profile {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 500px;
+  width: 400px
+}
+
+#user-profile-close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+#popup-update-user-profile {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 400px;
+  width: 300px
+}
+
+#update-user-profile-close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  html, body {
+    max-height: 700px;
+    margin: 5px;
+    padding: 5px;
+    height: 100%;
+    font-family: Arial;
+  }
+
+  #popup-error {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #21252a;
+    width: 300px;
+    height: 150px;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    border-radius: 10px;
+  }
+  
+  #popup-error h2 {
+    margin-top: 0;
+  }
+  
+  #pop-error button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
+  
+  #error-close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
+  
+  #popup-create-thread {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #popup-create-thread h2 {
+    margin-top: 0;
+  }
+  
+  #create-thread-close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
+  
+  #popup-update-thread {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #popup-update-thread h2 {
+    margin-top: 0;
+  }
+  
+  #update-thread-close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
+  
+  .thread-list {
+    border: 1px solid black;
+    max-height: 100px;
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  #body-dashboard {
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    flex-direction: column;
+  }
+  
+  #side-bar {
+    width: 350px;
+    height: 550px;
+    border: 1px solid blue;
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  #prev-btn {
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
+  #more-btn {
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
+  
+  #main-screen {
+    width: 350px;
+    border: 1px solid purple;
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  #thread-individual-screen-empty {
+    display: block;
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  #thread-individual-screen {
+    display: none;
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  
+  #thread-card div {
+    margin: 2px;
+    padding: 2px;
+  }
+  
+  #popup-update-comment {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #update-comment-close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
+  
+  #popup-update-comment-id {
+    display: none;
+  }
+  
+  
+  #popup-user-profile {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 250px;
+    width: 250px
+  }
+  
+  #user-profile-close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
+
+  #popup-update-user-profile {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 200px;
+    width: 200px
+  }
+  
+  #update-user-profile-close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
+}

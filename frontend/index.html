@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Qanda Forum</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- You can add your styles and scripts here -->
+	<link rel="stylesheet" type="text/css" media="screen" href="styles/global.css" />
+</head>
+<body>
+	<!-- Header Section -->	
+	<header>
+		<div id="top-bar">
+			<h1>Qanda Discussion</h1>
+			<div id="user-profile-link">
+				User Profile
+			</div>
+			<button id="logout-btn">Logout</button>
+		</div>
+	</header>
+
+	<main role="main">
+		<!-- Initial Page Section -->
+		<div id="page-initial">
+			<button id="login-link">Login</button>
+			<button id="register-link">Register</button>
+		</div>
+
+		<!-- Login Section -->
+		<div id="page-login">
+			<h2>Login</h2>
+			<form name="login_form">
+				Email: <input type="email" id="login-email" value="hello1@gmail.com"/><br />
+				Password: <input type="password" id="login-password" value="hello1"/><br />
+				<button id="login-btn">Login</button>
+			</form>
+		</div>
+
+		<!-- Register Section -->
+		<div id="page-register">
+			<h2>Register</h2>
+			<form name="registration_form">
+				Email: <input type="email" id="register-email" value="hello1@gmail.com"/><br />
+				Name: <input type="text" id="register-name" value="hello1"/><br />
+				Password: <input type="password" id="register-password_1" value="hello1"/><br />
+				Confirm Password: <input type="password" id="register-password_2" value="hello1"/><br />
+				<button id="register-btn">Register</button>
+			</form>
+		</div>
+
+		<!-- Main Page Section -->
+		<div id="page-dashboard">
+			<h2>Dashboard</h2>
+			<button id="create-thread-btn">Create New Thread</button>
+			<div id="body-dashboard">
+
+				<!-- Side Bar Section -->
+				<div id="side-bar">
+					<h2>Threads</h2>
+					<div id="threads-container"></div>
+					<button id="prev-btn">prev</button>
+					<button id="more-btn">more</button>
+				</div>
+
+				<!-- Main Screen Section -->
+				<div id="main-screen">
+					
+					<!-- Thread Indiivdual Screen Section -->
+					<div id="thread-individual-screen">
+						<div id="thread-details"></div>
+						<button id="thread-edit-btn">Edit</button>
+						<button id="thread-delete-btn">Delete</button>
+						<button id="thread-like-btn"></button>
+						<button id="thread-watch-btn"></button>
+						<button id="thread-comment-btn">Comment</button>				
+						
+						<!-- New Parent Comment Text Area -->
+						<div id="top-level-comment-text-box"></div>
+						
+						<!-- Comments Section -->
+						<div id="all-comments-container"></div>
+					</div>
+
+					<!-- Empty Indivdual Screen Section -->
+					<div id="thread-individual-screen-empty">
+						<h2>Select a Thread</h2>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Create New Thread Section -->
+			<div id="popup-create-thread">
+				<button id="create-thread-close-btn">X</button>
+				<h2>Create Thread</h2>
+				Title: <input type="text" id="new-thread-title"/><br />
+				isPublic: <input type="checkbox" id="new-thread-privacy"/><br />
+				Content: <textarea id="new-thread-content"></textarea><br />
+				<button id="new-thread-submit-btn">Create</button>
+			</div>
+		
+			<!-- Update the Thread Section -->
+			<div id="popup-update-thread">
+				<button id="update-thread-close-btn">X</button>
+				<h2>Update Thread</h2>
+					Title: <input type="text" id="individual-thread-title"/><br />
+					isPublic: <input type="checkbox" id="individual-thread-privacy"/><br />
+					isLock: <input type="checkbox" id="individual-thread-lock"/><br />
+					Content: <textarea id="individual-thread-content"></textarea><br />
+					<button id="thread-update-btn">Save</button>
+			</div>
+		</div>
+
+		<!-- Error Popup Section -->
+		<div id="popup-error">
+			<button id="error-close-btn">X</button>
+			<h2>Error</h2>
+			<p id="errorMessage"></p>
+		</div>
+
+		<!-- User Profile Section -->
+		<div id="popup-user-profile"></div>
+
+		<!-- Update User Profile Section -->
+		<div id="popup-update-user-profile">
+			<button id="update-user-profile-close-btn">X</button>
+			<h2>Update User Profile</h2>
+				Email: <input type="text" id="update-user-email"/><br />
+				Password: <input type="text" id="update-user-password"/><br />
+				Name: <input type="text" id="update-user-name"/><br />
+				
+				<button id="user-profile-update-btn">Save</button>
+		</div>
+
+	</main>
+
+	<!-- Footer Section -->
+	<footer>
+		<p>&copy; Qanda 2024</p>
+	</footer>
+
+	<script type="module" src="src/main.js"></script>
+
+</body>
+</html>
