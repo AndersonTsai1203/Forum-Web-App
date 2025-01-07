@@ -1,4 +1,4 @@
-# Forum-Web-App
+# Course Forum Web Application
 
 A simple version of a course forum web application
 
